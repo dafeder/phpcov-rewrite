@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__.'/vendor/autoload.php';
+
+use Dafeder\PhpcovRewrite\Command\RewriteCommand;
+use Symfony\Component\Console\Application;
+
+$application = new Application('phpcov-rewrite');
+$command = new RewriteCommand();
+
+$application->add($command);
+
+$application->setDefaultCommand($command->getName(), true);
+$application->run();

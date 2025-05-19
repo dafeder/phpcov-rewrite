@@ -1,0 +1,25 @@
+{
+    "name": "dafeder/phpcov-rewrite",
+    "description": "Rewrite phpunit coverage files to change the file path",
+    "type": "project",
+    "require": {
+        "symfony/console": "^7.2",
+        "phpunit/php-code-coverage": "^9.2"
+    },
+    "license": "GPL-2.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Dafeder\\PhpcovRewrite\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dan Feder",
+            "email": "dan.feder@civicactions.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "bin": [
+        "phpcov-rewrite"
+    ]
+}
