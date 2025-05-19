@@ -3,7 +3,7 @@
     "description": "Rewrite phpunit coverage files to change the file path",
     "type": "project",
     "require": {
-        "symfony/console": "^7.2",
+        "symfony/console": "^5.4",
         "phpunit/php-code-coverage": "^9.2"
     },
     "license": "GPL-2.0-or-later",
